@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.2] 2020-02-07
+- Added autoload path.
+
 ## [1.0.1] 2020-02-07
 - Updated package name.
 
