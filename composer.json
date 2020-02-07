@@ -1,5 +1,5 @@
 {
-  "name": "emo/emo-coding-standard-bundle",
+  "name": "emokykla/emo-coding-standards",
   "description": "Emokykla coding standards",
   "type": "metapackage",
   "require": {
