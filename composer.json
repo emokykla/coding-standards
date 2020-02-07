@@ -1,7 +1,7 @@
 {
   "name": "emokykla/emo-coding-standards",
   "description": "Emokykla coding standards",
-  "type": "metapackage",
+  "type": "library",
   "require": {
   },
   "require-dev": {
@@ -23,10 +23,5 @@
       "name": "Darius Ratkevičius",
       "email": "darius@ratkevicius.lt"
     }
-  ],
-  "autoload-dev": {
-    "psr-4": {
-      "EMO\\EmoCodingStandards\\": ""
-    }
-  }
+  ]
 }
