@@ -23,5 +23,10 @@
       "name": "Darius Ratkevičius",
       "email": "darius@ratkevicius.lt"
     }
-  ]
+  ],
+  "autoload-dev": {
+    "psr-4": {
+      "EMO\\EmoCodingStandards\\": ""
+    }
+  }
 }
