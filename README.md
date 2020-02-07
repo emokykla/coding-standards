@@ -5,7 +5,8 @@
 composer require emokykla/coding-standards --dev
 ```
 
-## Configure PHP Code Sniffer
-- Go to Editor > Inspections > PHP_CodeSniffer validation
+## Configure PHP Code Sniffer in PhpStorm
+- Copy "phpcs.xml.dis" to "phpcs.xml" in your project root.
+- Go to Preferences>Editor>Inspections>PHP_CodeSniffer validation
 - Select "Custom" under "Coding standard".
-- Select vendor/emokykla/coding-standards/ruleset.xml
+- Select phpcs.xml in your project root.
