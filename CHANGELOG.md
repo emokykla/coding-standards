@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.7] 2020-02-07
+- Added xml schema to rule files.
+
+## [1.0.6] 2020-02-07
+- Updated Phpstorm installation instructions.
+- Added phpcs.xml.dist.
+
 ## [1.0.5] 2020-02-07
 - Moved dependencies to prod.
 
