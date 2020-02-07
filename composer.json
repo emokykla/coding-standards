@@ -9,5 +9,19 @@
     "squizlabs/php_codesniffer": "^3.5",
     "slevomat/coding-standard": "^6.1"
   },
-  "license": "Internal Emokykla use only"
+  "license": "Internal Emokykla use only",
+  "authors": [
+    {
+      "name": "Aurelijus Rožėnas",
+      "email": "aurelijus.rozenas@gmail.com"
+    },
+    {
+      "name": "Paulius Lukošiūnas",
+      "email": "pauliuslukosiunas@gmail.com"
+    },
+    {
+      "name": "Darius Ratkevičius",
+      "email": "darius@ratkevicius.lt"
+    }
+  ]
 }
