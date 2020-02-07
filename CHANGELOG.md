@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.4] 2020-02-07
+- Renamed package.
+- Added installation instructions.
+
 ## [1.0.3] 2020-02-07
 - Changed package type.
 
