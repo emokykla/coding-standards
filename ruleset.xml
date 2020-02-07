@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<ruleset name="EMO coding standard">
+  <!--
+  New standard. Suggested in symfony conf 2019.
+  Only 1 and 2 included in symfony coding standard.
+  -->
+  <rule ref="PSR12">
+    <!-- Storm takes care of this -->
+    <exclude name="Generic.Files.LineLength"/>
+    <!-- PHPStorm does not support adding new lines after use groups (classes, constants, etc.) -->
+    <exclude name="PSR12.Files.FileHeader.SpacingAfterBlock"/>
+    <!-- Symfony coding rules require no spaces -->
+    <exclude name="PSR12.Operators.OperatorSpacing.NoSpaceAfter"/>
+    <exclude name="PSR12.Operators.OperatorSpacing.NoSpaceBefore"/>
+  </rule>
+  <!--
+  Symfony coding standard - exclude unneeded
+  -->
+  <rule ref="vendor/escapestudios/symfony2-coding-standard/Symfony/ruleset.xml">
+    <!-- We don't require licence notice -->
+    <exclude name="Symfony.Commenting.License.Warning"/>
+    <!-- We don't require class comments -->
+    <exclude name="Symfony.Commenting.ClassComment.Missing"/>
+    <!-- We don't require function comments -->
+    <exclude name="Symfony.Commenting.FunctionComment.Missing"/>
+    <exclude name="Symfony.Commenting.FunctionComment.MissingParamTag"/>
+    <exclude name="Symfony.Commenting.FunctionComment.MissingReturn"/>
+    <exclude name="Symfony.Commenting.FunctionComment.ParamNameNoMatch"/>
+    <!-- We allow any order of function scope -->
+    <exclude name="Symfony.Functions.ScopeOrder.Invalid"/>
+    <!-- We allow arguments for function in multiple lines -->
+    <exclude name="Symfony.Functions.Arguments.Invalid"/>
+    <!-- We do this `!$isBool` instead of `! $isBool` -->
+    <exclude name="Generic.Formatting.SpaceAfterNot"/>
+    <!-- We don't use yoda syntax conditions -->
+    <exclude name="Symfony.ControlStructure.YodaConditions.Invalid"/>
+    <!--
+        if (true) {
+        } // allow comments like this
+        else {
+        }
+    -->
+    <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
+    <!-- We use PSR12 PSR12.ControlStructures.ControlStructureSpacing.FirstExpressionLine instead -->
+    <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+    <!--
+     Requires space after class keyword so anonymous class instantiation looks funny.
+     E.g. return new class () implements ChildGetterInterface
+     vs return new class implements ChildGetterInterface
+     see https://www.php.net/manual/en/language.oop5.anonymous.php
+     -->
+    <exclude name="Symfony.Objects.ObjectInstantiation.Invalid"/>
+  </rule>
+
+  <!--
+  Slevomat coding standard - include only required rules
+  https://github.com/slevomat/coding-standard#sniffs-included-in-this-standard
+  Including only required rules as suggested.
+  -->
+  <config name="installed_paths" value="vendor/slevomat/coding-standard/"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
+  <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
+  <!-- We use format declare(strict_types=1); -->
+  <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+    <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceBetweenOpenTagAndDeclare"/>
+    <properties>
+      <property name="spacesCountAroundEqualsSign" value="0"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
+  <rule ref="SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants"/>
+  <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/>
+  <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
+  <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
+  <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
+  <rule ref="SlevomatCodingStandard.PHP.RequireNowdoc"/>
+  <rule ref="SlevomatCodingStandard.PHP.UselessParentheses"/>
+  <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking"/>
+  <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
+  <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition"/>
+  <!-- <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/> getEntityManager(string $name = null) vs getEntityManager(?string $name = null)-->
+  <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations"/>
+  <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment"/>
+  <rule ref="SlevomatCodingStandard.Commenting.UselessInheritDocComment"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
+</ruleset>
