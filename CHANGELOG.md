@@ -1,6 +1,9 @@
 # Change Log
 
-## [1.0.8] 2020-02-07
+## [1.0.9] 2020-02-10
+- Removed SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn.UselessIfCondition
+
+## [1.0.8] 2020-02-10
 - Fixed mistype.
 - Removed library type.
 
