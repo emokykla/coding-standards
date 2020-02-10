@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.8] 2020-02-07
+- Fixed mistype.
+- Removed library type.
+
 ## [1.0.7] 2020-02-07
 - Added xml schema to rule files.
 
