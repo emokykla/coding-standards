@@ -94,5 +94,4 @@
   <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations"/>
   <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment"/>
   <rule ref="SlevomatCodingStandard.Commenting.UselessInheritDocComment"/>
-  <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
 </ruleset>
