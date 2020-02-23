@@ -80,7 +80,7 @@
   <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
-  <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/>
+<!--  <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/> Enable for php 7.4, not available in 7.3 -->
   <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
   <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
   <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>

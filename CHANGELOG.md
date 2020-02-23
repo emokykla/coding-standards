@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.10] 2020-02-23
+- Removed Slevomat RequiredNullCoalesceEqualOperator it is available only installation php 7.4.
+
 ## [1.0.9] 2020-02-10
 - Removed SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn.UselessIfCondition
 
