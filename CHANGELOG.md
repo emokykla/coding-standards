@@ -1,4 +1,6 @@
 # Change Log
+## [2.0.0] 2020-11-16
+- Updated dependencies.
 
 ## [1.0.10] 2020-02-23
 - Removed Slevomat RequiredNullCoalesceEqualOperator it is available only installation php 7.4.
