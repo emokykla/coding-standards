@@ -1,5 +1,9 @@
 # Change Log
 
+- Disabled Zend.NamingConventions.ValidVariableName.MemberVarContainsNumbers.
+
+## [3.1.0] 2021-07-18
+
 - Updated dependencies.
 
 ## [3.0.0] 2021-07-18
